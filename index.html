@@ -8,19 +8,39 @@
         body {
             background-image: url('https://raw.githubusercontent.com/risetomarket/focosnogo/refs/heads/main/snowbackgorund.png');
             background-size: cover;
-            text-align: center;
-            color: white;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .logo {
-            margin-top: 50px;
+
+        img {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            img {
+                width: 80%;
+                max-width: 250px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="https://raw.githubusercontent.com/risetomarket/focosnogo/refs/heads/main/large pfp.png" alt="FoCo Sno Go Logo" width="500">
+    <header>
+        <img src="https://raw.githubusercontent.com/risetomarket/focosnogo/refs/heads/main/large%20pfp.png" alt="Logo">
+    </header>
+
+    <div class="content">
+        <!-- Add your content here -->
     </div>
-    <h1>Welcome to FoCo Sno Go!</h1>
-    <p>Your trusted snow removal service.</p>
 </body>
 </html>
