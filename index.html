@@ -16,40 +16,26 @@
         }
 
         .logo {
-            width: 400px; /* Desktop logo size */
+            width: 400px;  /* Logo size doubled */
             margin: 20px 0;
         }
 
         .text-box {
             display: inline-block;
-            background-color: rgba(26, 20, 35, 0.55);
+            background-color: rgba(26, 20, 35, 0.55); /* #1a1423 with 55% opacity */
             border-radius: 10px;
             padding: 15px 30px;
             margin: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: auto; /* Dynamic width based on content */
-            text-align: center;
+            max-width: 90%;
+            width: auto;
         }
 
         p {
-            font-size: 20px;
+            font-size: 22px;  /* Slightly larger text for readability */
             color: skyblue;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            margin: 10px 0;
-            line-height: 1.6;
-            word-wrap: break-word;
-        }
-
-        .inline-pricing {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-        }
-
-        .inline-pricing p {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
             margin: 0;
-            width: 48%; /* Equal spacing between items */
         }
 
         .fb-button {
@@ -61,35 +47,53 @@
             height: auto;
         }
 
+        /* Flex layout for sections */
         .section-container {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Responsive Adjustments */
+        /* Alignment for specific items */
+        .align-left {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .align-right {
+            float: right;
+            margin-right: 10px;
+        }
+
+        /* Clear floats for the container */
+        .clearfix {
+            clear: both;
+        }
+
+        /* Responsive Styles for Mobile */
         @media (max-width: 768px) {
             .logo {
-                width: 300px; /* Smaller logo for mobile */
+                width: 300px; /* Slightly smaller logo on mobile */
             }
 
             .text-box {
-                width: 95%; /* Mobile-friendly width */
-                padding: 10px 20px;
+                padding: 10px 20px; /* Less padding on mobile for better fit */
+                width: 90%; /* Use the full width of the viewport */
+                max-width: 90%;
             }
 
             p {
-                font-size: 18px; /* Slightly smaller font for mobile */
+                font-size: 20px; /* Slightly smaller font for mobile readability */
             }
 
-            .inline-pricing {
-                flex-direction: column; /* Stack items vertically on mobile */
-                align-items: center;
+            .align-left, .align-right {
+                float: none;
+                text-align: center; /* Align text in the center on mobile */
+                margin: 5px 0;
             }
 
-            .inline-pricing p {
-                width: 100%; /* Full width for mobile */
-                text-align: center;
+            .clearfix {
+                display: none; /* Remove unnecessary clearfix on mobile */
             }
         }
     </style>
@@ -135,10 +139,9 @@
             <p>Single car, Long (~60ft) driveway: $40</p>
             <p>Two car, short (~30ft) driveway: $40</p>
             <p>Two car, Long (~60ft) driveway: $50</p>
-            <div class="inline-pricing">
-                <p>+$10 per car lane</p>
-                <p>$10 Per Sidewalk</p>
-            </div>
+            <p class="align-left">+$10 per car lane</p>
+            <p class="align-right">$10 Per Sidewalk</p>
+            <div class="clearfix"></div>
             <p>Plant and Pet Friendly Ice Melt Application $10 to $30</p>
         </div>
 
