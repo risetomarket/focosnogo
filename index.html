@@ -47,7 +47,7 @@
             height: auto;
         }
 
-        /* Add CSS to make sections display vertically */
+        /* Flex layout for sections */
         .section-container {
             display: flex;
             flex-direction: column;
@@ -70,26 +70,50 @@
             clear: both;
         }
 
+        /* Responsive Styles for Mobile */
+        @media (max-width: 768px) {
+            .logo {
+                width: 300px; /* Slightly smaller logo on mobile */
+            }
+
+            .text-box {
+                padding: 10px 20px; /* Less padding on mobile for better fit */
+                width: 90%; /* Use the full width of the viewport */
+                max-width: 90%;
+            }
+
+            p {
+                font-size: 20px; /* Slightly smaller font for mobile readability */
+            }
+
+            .align-left, .align-right {
+                float: none;
+                text-align: center; /* Align text in the center on mobile */
+                margin: 5px 0;
+            }
+
+            .clearfix {
+                display: none; /* Remove unnecessary clearfix on mobile */
+            }
+        }
     </style>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11158854113">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11158854113"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'AW-11158854113');
-</script>
+      gtag('config', 'AW-11158854113');
+    </script>
     <!-- Event snippet for Page view conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11158854113/9CrACPXf05QaEOGz-sgp',
-      'value': 1.0,
-      'currency': 'USD'
-  });
-</script>
-
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11158854113/9CrACPXf05QaEOGz-sgp',
+          'value': 1.0,
+          'currency': 'USD'
+      });
+    </script>
 </head>
 <body>
 
@@ -103,10 +127,10 @@
 
         <div class="text-box">
             <p>Stack these deals to get your drive and sidewalks cleaned for FREE!</p>
-            <p>❄ Book early and get $10 off services up to $40❄</p>
-            <p>❄ Get $20 off services over $40❄</p>
-            <p>❄ Get another $10 off for each referral❄</p>
-            <p>❄ You and the referral get $10 off❄</p>
+            <p>❄ Book early and get $10 off services up to $40 ❄</p>
+            <p>❄ Get $20 off services over $40 ❄</p>
+            <p>❄ Get another $10 off for each referral ❄</p>
+            <p>❄ You and the referral get $10 off ❄</p>
         </div>
 
         <div class="text-box">
