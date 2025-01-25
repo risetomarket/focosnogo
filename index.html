@@ -3,115 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOCO SNO GO</title>
+    <title>FoCo Sno Go</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background: url('https://i.imgur.com/0PMIBik.jpeg') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #333;
         }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
+
+        .logo {
+            width: 400px;  /* Logo size doubled */
+            margin: 20px 0;
         }
-        header img {
-            max-width: 200px;
+
+        .text-box {
+            display: inline-block;
+            background-color: rgba(211, 211, 211, 0.55); /* 55% opacity */
+            border-radius: 10px;
+            padding: 15px 30px;
+            margin: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: auto;
+        }
+
+        p {
+            font-size: 22px;  /* Slightly larger text for readability */
+            color: skyblue;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+            margin: 0;
+        }
+
+        .fb-button {
+            margin-top: 20px;
+        }
+
+        .fb-button img {
+            width: 50px;
             height: auto;
         }
-        section {
-            padding: 20px;
+
+        /* Add CSS to make sections display vertically */
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        h1 {
-            font-size: 2.5em;
+
+        /* Alignment for specific items */
+        .align-left {
+            float: left;
+            margin-left: 10px;
         }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
+
+        .align-right {
+            float: right;
+            margin-right: 10px;
         }
-        .offers {
-            font-size: 1.2em;
-            margin-top: 20px;
-            background-color: #e0f7fa;
-            padding: 15px;
-            border-radius: 8px;
+
+        /* Clear floats for the container */
+        .clearfix {
+            clear: both;
         }
-        .pricing, .contact-info {
-            margin-top: 30px;
-        }
-        .pricing ul, .offers ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .pricing li, .offers li {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 10px;
-            font-size: 0.9em;
-        }
+
     </style>
 </head>
 <body>
 
-<header>
-    <img src="https://raw.githubusercontent.com/risetomarket/focosnogo/refs/heads/main/large%20pfp.png" alt="FOCO SNO GO Logo">
-    <h1>Fast, Affordable, and Dependable Snow and Ice Removal</h1>
-    <p>Serving residential and small commercial properties in Fort Collins</p>
-</header>
+    <!-- Logo Section -->
+    <img src="https://i.imgur.com/5DDDXFA.png" alt="FoCo Sno Go Logo" class="logo">
 
-<section>
-    <h2>Stack These Deals to Get Your Driveway & Sidewalks Cleaned for FREE!</h2>
-    <div class="offers">
-        <ul>
-            <li>❄ Book early and get $10 off services up to $40 ❄</li>
-            <li>❄ Get $20 off services over $40 ❄</li>
-            <li>❄ Get another $10 off for each referral ❄</li>
-            <li>❄ You and the referral get $10 off ❄</li>
-        </ul>
-    </div>
-    
-    <div class="pricing">
-        <h2>Pricing</h2>
-        <ul>
-            <li>Single car, short (~30ft) driveway: $30</li>
-            <li>Single car, long (~60ft) driveway: $40</li>
-            <li>Two car, short (~30ft) driveway: $40</li>
-            <li>Two car, long (~60ft) driveway: $50</li>
-            <li>+$10 per car lane</li>
-            <li>$10 Per Sidewalk</li>
-            <li>Plant and Pet Friendly Ice Melt Application: $10 to $30</li>
-        </ul>
-    </div>
-    
-    <div class="contact-info">
-        <h2>Call or Email Now</h2>
-        <p>Call us at <a href="tel:+19709807745">970-980-7745</a> or email us at <a href="mailto:FoCoSnoGo@gmail.com">FoCoSnoGo@gmail.com</a> to clear and de-ice your driveway and sidewalks!</p>
-        <a href="https://www.facebook.com/focosnogo" class="button" target="_blank">Visit Our Facebook</a>
-    </div>
-</section>
+    <div class="section-container">
+        <div class="text-box">
+            <p>Fast, affordable, and dependable snow and ice removal services for residential and small commercial properties in Fort Collins</p>
+        </div>
 
-<footer>
-    <p>&copy; 2025 FOCO SNO GO | All Rights Reserved</p>
-</footer>
+        <div class="text-box">
+            <p>Stack these deals to get your drive and sidewalks cleaned for FREE!</p>
+            <p>❄ Book early and get $10 off services up to $40</p>
+            <p>❄ Get $20 off services over $40</p>
+            <p>❄ Get another $10 off for each referral</p>
+            <p>❄ You and the referral get $10 off</p>
+        </div>
+
+        <div class="text-box">
+            <p>Pricing:</p>
+            <p>Single car, short (~30ft) driveway: $30</p>
+            <p>Single car, Long (~60ft) driveway: $40</p>
+            <p>Two car, short (~30ft) driveway: $40</p>
+            <p>Two car, Long (~60ft) driveway: $50</p>
+            <p class="align-left">+$10 per car lane</p>
+            <p class="align-right">$10 Per Sidewalk</p>
+            <div class="clearfix"></div>
+            <p>Plant and Pet Friendly Ice Melt Application $10 to $30</p>
+        </div>
+
+        <div class="text-box">
+            <p>Call 970-980-7745 or email FoCoSnoGo@gmail.com to clear and de-ice your driveway and sidewalks now!</p>
+        </div>
+    </div>
+
+    <div class="fb-button">
+        <a href="https://www.facebook.com/focosnogo" target="_blank">
+            <img src="https://i.imgur.com/5qmooWd.png" alt="Facebook">
+        </a>
+    </div>
 
 </body>
 </html>
